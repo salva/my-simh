@@ -170,7 +170,6 @@ struct eth_device {
   uint32        dbit;                                   /* debugging bit */
   int           reflections;                            /* packet reflections on interface */
   int           need_crc;                               /* device needs CRC (Cyclic Redundancy Check) */
-  int           vde;                                    /* use VDE lib instead of pcap */
 #if defined (USE_READER_THREAD)
   ETH_QUE       read_queue;
   pthread_mutex_t     lock;
