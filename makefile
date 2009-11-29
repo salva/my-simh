@@ -15,7 +15,7 @@ ifeq ($(WIN32),)
   CC = gcc -std=c99 -U__STRICT_ANSI__ -g $(OS_CCDEFS) -I .
   ifeq ($(USE_NETWORK),)
   else
-    NETWORK_OPT = -DUSE_NETWORK -isystem /usr/local/include /usr/local/lib/libpcap.a
+    NETWORK_OPT = -DUSE_NETWORK -isystem /usr/local/vde2/include /usr/local/vde2/lib/libvdeplug.a
   endif
 else
   #Win32 Environments
